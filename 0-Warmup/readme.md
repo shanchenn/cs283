@@ -19,10 +19,13 @@ Please provide answers to these questions using markdown notation and place them
 
 
 3. Please provide a link to the repository you are using for this class.
+
 https://github.com/shanchenn/cs283
 
 4. Briefly describe what you want to get out of this class.
+
 I would like get better at C and learn how to use docker.
 
 5. Briefly describe any concerns you might be having with being successful in this class (if any).
+
 I am not the best at C, so I think I will need to practice my C skills a lot for this course.
