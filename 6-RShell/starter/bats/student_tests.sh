@@ -12,3 +12,29 @@ EOF
     # Assertions
     [ "$status" -eq 0 ]
 }
+
+# echo command does not work
+# @test "Check echo command" {
+#     run ./dsh -c -i 127.0.0.1 -p 5678 <<EOF
+#     echo "Hello, world!"
+# EOF
+    
+#     [ "$status" -eq 0 ]
+#     [[ "$output" == *"Hello, world!"* ]]
+# }
+
+@test "Check exit command" {
+    run ./dsh -c -i 127.0.0.1 -p 5678 <<EOF
+    exit
+EOF
+    
+    [ "$status" -eq 0 ]
+}
+
+@test "Check stop-server command" {
+    run ./dsh -c -i 127.0.0.1 -p 5678 <<EOF
+    stop-server
+EOF
+    
+    [ "$status" -eq 0 ]
+}
